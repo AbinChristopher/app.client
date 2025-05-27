@@ -1,0 +1,1 @@
+D:\AppStore\app\app.client\obj\Debug\app.client.esproj.CoreCompileInputs.cache
