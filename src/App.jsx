@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import store from './redux/store';
-//import NavMenu from './components/navmenu/NavMenu';
+import NavMenu from './components/navmenu/NavMenu';
 import CustomerPage from './pages/CustomerPage';
 import StorePage from './pages/StorePage';
 import SalesPage from './pages/SalesPage';

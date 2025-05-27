@@ -3,7 +3,7 @@ import customersReducer from './customersSlice';
 import productsReducer from './productSlice';
 import salesReducer from './salesSlice';
 import storesReducer from './storeSlice';
-import homePageReducer from './homePageSlice';  // Import the new homePageSlice
+import homePageReducer from './homepageSlice';  // Import the new homePageSlice
 
 const store = configureStore({
     reducer: {
