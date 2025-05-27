@@ -1,0 +1,207 @@
+body {
+}
+
+.main-content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.customer-table,
+.store-table,
+.sales-table,
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .customer-table thead,
+    .store-table thead,
+    .sales-table thead,
+    .product-table thead {
+        background: #4CAF50;
+        color: white;
+        text-align: left;
+    }
+
+    .customer-table th,
+    .store-table th,
+    .sales-table th,
+    .product-table th,
+    .customer-table td,
+    .store-table td,
+    .sales-table td,
+    .product-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .customer-table tbody tr:nth-child(even),
+    .store-table tbody tr:nth-child(even),
+    .sales-table tbody tr:nth-child(even),
+    .product-table tbody tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.add-new-customer {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px; 
+}
+
+    .add-new-customer:hover {
+        background-color: #218838; 
+    }
+
+
+.edit-button, .delete-button, .add-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+
+
+.edit-button {
+    background: #007bff;
+    color: white;
+}
+
+    .edit-button:hover {
+        background: #0056b3;
+    }
+
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+}
+
+    .delete-button:hover {
+        background: #b52a37;
+    }
+
+
+.add-button {
+    background: #28a745;
+    color: white;
+}
+
+    .add-button:hover {
+        background: #218838;
+    }
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: slideUp 0.3s ease-out;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.confirm-button, .cancel-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+}
+
+    .confirm-button:hover {
+        background-color: #e60000;
+    }
+
+.cancel-button {
+    background-color: #ccc;
+    color: white;
+    border: none;
+}
+
+    .cancel-button:hover {
+        background-color: #999;
+    }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

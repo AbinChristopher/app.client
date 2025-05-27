@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .store-table thead {
+        background: #4CAF50;
+        color: white;
+        text-align: left; 
+    }
+
+  
+    .store-table th {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    
+    .store-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+  
+    .store-table tr:hover {
+        background: #e2e6ea;
+    }
+
+    .store-table tbody tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+.add-new-store {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+    margin-left: 20px; 
+}
+
+    .add-new-store:hover {
+        background-color: #0056b3;
+    }
+
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+
+.edit-button, .delete-button {
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+
+.edit-button, .delete-button {
+    padding: 6px 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+
+
+.edit-button {
+    background: #007bff;
+    color: white;
+}
+
+    .edit-button:hover {
+        background: #0056b3;
+    }
+
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+}
+
+    .delete-button:hover {
+        background: #b52a37;
+    }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm-button,
+.cancel-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.confirm-button {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.cancel-button {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.confirm-button:hover {
+    background-color: #c3e6cb;
+}
+
+.cancel-button:hover {
+    background-color: #f1b0b7;
+}
