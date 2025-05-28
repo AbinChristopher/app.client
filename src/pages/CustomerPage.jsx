@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCustomers } from '../redux/customersSlice';
-import CustomerList from '../components/CustomersList';
-import CustomerForm from '../components/CustomerForm';
+import CustomerList from '../Components/CustomersList';
+import CustomerForm from '../Components/CustomerForm';
 import './CustomerPage.css';
 
 const CustomerPage = () => {
